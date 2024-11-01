@@ -9,13 +9,19 @@ public class IT24103917Lab3Q1B {
 	   System.out.print("Enter the number of kilograms you want to buy:");
 	   double kilograms = scanner.nextDouble();
 	   //Calculate total cost 
-	   double totalCost = pricePerKg*kilograms*0.9;
-	   //Display the total cost system.out.printf("The total amount you have to pay after a 10%% discount is: %.2f\n", totalCost);
+	   double totalCost = pricePerKg*kilograms;
+	   //Apply a 10% discount 
+	   double discount = 0.10*totalCost;
+	   System.out.print("The discount is:"+ discount);
+	   double finalAmount = totalCost-discount;
+	   //Display the total cost system.out.printf("The total amount you have to pay after a 10%% discount is: %.2f\n",finalAmount);
 	  	  System.out.println("");
-		  System.out.print("The total amount is:" + totalCost);
+		  System.out.print("The total amount is:" + finalAmount);
 		  scanner.close();
 	  
 	   }
 }
+	 
+	   
 	 
 	   
